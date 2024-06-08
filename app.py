@@ -5,8 +5,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-prediction_values = pd.read_csv("prediction_values.csv")
-encoded_values = pd.read_csv("tobe_scaled.csv")
+
 
 @app.route('/')
 def homepage():
