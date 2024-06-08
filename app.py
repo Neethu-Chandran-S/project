@@ -1,4 +1,4 @@
-from flask import Flask, render_template,request
+from flask import Flask, render_template
 import pickle
 import pandas as pd
 import numpy as np
