@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,request
 import pickle
 import pandas as pd
 import numpy as np
@@ -13,6 +13,6 @@ def homepage():
 
 @app.route('/predict')
 def predict():
-    return render_template('predict.html')
+    return render_template('predict.html',method="post")
 if __name__ == "__main__":
     app.run()
